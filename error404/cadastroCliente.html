@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagem/Logo.png" alt="">
+        <div id="principal">
+            <span>
+                <a href="index.html" class="principalButton" style="margin-left: 50px;">HOME</a>
+            </span>
+        </div>
+    </header>
+
+    <aside>
+        <h1>NEWS! </h1>
+    </aside>
+
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>
+                    <h2>Cadastro</h2>
+                </legend>
+                <label for="idNome">Nome:</label>
+                <input type="text" id="idNome" name="nomeCadastro" maxlength="70" placeholder="Digite o seu nome."><br><br>
+                <label for="idDataNascimento">Data Nascimento:</label>
+                <input type="date" id="idDataNascimento" name="dataCadastro"><br><br>
+                <label for="idCpf">Cpf:</label>
+                <input type="text" id="idCpf" name="cpfCadastro" maxlength="14" placeholder="###.###.###-##"><br><br>
+                <label for="idRg">Rg:</label>
+                <input type="text" id="idRg" name="rgCadastro" maxlength="12" placeholder="##.###.###-#"><br><br>
+                <label for="idPais">Pais:</label>
+                <input type="text" id="idPais" name="paisCadastro" maxlength="50" placeholder="Pais de origem."><br><br>
+                <label for="idEstado">Estado:</label>
+                <input type="text" id="idEstado" name="estadoCadastro" maxlength="50" placeholder="Estado de origem."><br><br>
+                <label for="idEndereco">Estado:</label>
+                <input type="text" id="idEndereco" name="enderecoCadastro" maxlength="50" placeholder="Endereço."><br><br>
+                <label for="idEmail">E-mail:</label>
+                <input type="email" id="idEmail" name="emailCadastro" maxlength="50" placeholder="E-mail."><br><br>
+                <label for="idSenha">Senha:</label>
+                <input type="password" id="idSenha" name="senhaCadastro" maxlength="50" placeholder="Senha"><br><br>
+                <label for="idSenhaR">Repetir Senha:</label>
+                <input type="password" id="idSenhaR" name="senhaRCadastro" maxlength="50" placeholder="Senha"><br><br>
+                
+                <span style="padding: 450px;">
+                    <input type="submit" value="Enviar" style=" box-shadow: 5px 5px 10px #bb1b0b; border-radius: 30%;"> &nbsp;
+                    <input type="reset" value="Apagar"style=" box-shadow: 5px 5px 10px #bb1b0b;  border-radius: 30%;" >
+                </span>
+
+            </fieldset>
+
+        </form>
+        <br>
+        <img src="imagem/Home.png" alt="" id="marca" style="float: right; margin-right: 250px;">
+    </main>
+    <nav>
+            <span id="spanmenu">
+            <span class="bmenu"> <a href="index.html">Home</a></span>
+            <span class="bmenu"> <a href="historico.html">Historia da empresa</a></span>
+            <span class="bmenu"> <a href="cadastroCliente.html">Cadastro Cliente</a></span>
+            <span class="bmenu"> <a href="fotosLivros.html">Livros</a></span>
+            <span class="bmenu"> <a href="galeriaVideos.html">Galeria de Videos</a></span>
+            <span class="bmenu"> <a href="analiseAvalialcao.html">Analise de Avaliação</a></span>
+            <span class="bmenu"> <a href="contato.html"> Contato </a></span>
+        </span>
+        </nav>
+</body>
+
+</html>
