@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRAR</title>
+    <script defer src="js/user.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <div style="width: 100%; height: 100%;">
+            <div style=" position:absolute; margin-left: 45%;margin-top: 0.5%;">
+                <h1 style="text-align: center; margin-top: 0.5%;">RECEITA BOOK</h1>
+            </div>
+            <div style=" position:absolute; margin-left: 90%; margin-top: 0.5%; width: 100px;">
+                
+                <h3 for="" id="lblUser" ></h3>
+            </div>
+
+        </div>  
+    </nav>
+    <main>
+        <section>
+            <div style="margin-left: 45%; margin-top: 5%;">
+
+                Nome: <label for="" id="lblNome"></label><br>
+                Contato: <label for="" id="lblContato"></label><br>
+                Receita: <label for="" id="lblReceita"></label><br>
+            </div>
+            
+            <table style="margin-left: 5%; margin-top: 7%;">
+                <td>
+                    <textarea name="receita" id="txtReceita" cols="50" rows="15"
+                        placeholder="Receita:           Igredientes"></textarea>
+
+                    <button id="btnCadastrarReceita" onclick="cadastrarReceita()">Cadastrar Receita</button>
+                </td>
+                <td>
+                    <textarea name="" id="txtLocalizar" cols="50" rows="15"
+                        placeholder="ID | Auto | Receita | Vizualização" disabled style="text-align: left;"></textarea>
+                   <br>
+                    <button id="btnLocalizarReceita" onclick="pegarTodasReceitas()" style="margin-left: 13%;">&#x1F50E</button>
+                    <input type="number" name="" id="idReceitaEsco" placeholder="ID receita" minlength="0">
+                    <button onclick="vizualizarReceita()">ok</button>
+
+                </td>
+
+                <td>
+                    <div id="divReceitaPego">
+                    </div>
+                </td>
+            </table>
+        </section>
+        <article>
+            
+        </article>
+        <aside></aside>
+      
+
+            <button onclick="logout()" id="logoutUser" style="float: right; margin-right: 1%;">Logout</button><br>
+            <div id="divDeletarUser">
+
+                <button onclick="deletarUsers()" id="deletarUser" style="float: left; margin-left: 1%;">Deletar</button>
+            </div>
+    </main>
+     <footer> 
+    </footer>
+
+</body>
+
+</html>
